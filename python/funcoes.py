@@ -19,14 +19,15 @@ def info_usuario(**dados):
 
 info_usuario(nome="João", idade=19, cidade="São Paulo")
 
+#EXERCICIO
+def criar_tarefa(titulo, horario, materiais):#cria a funcao e passa parametros explicitos, que força fornecer dados essencias, evitando criar uma tarefa imcompleta
+    return {"titulo": titulo, "horario": horario, "materiais": materiais}#return armazena para uso posterior
 
-def criar_tarefa(titulo, horario, materiais):
-    return {"titulo": titulo, "horario": horario, "materiais": materiais}
-
-tarefa = criar_tarefa(titulo="Estudar POO", horario= "17:00", materiais=["Carreira backend Alura", "Tutor Claude"])
+tarefa = criar_tarefa(titulo="Estudar POO", horario= "17:00", materiais=["Carreira backend Alura", "Tutor Claude"])#funçao é chamada e os parametros recebem valor
 
 
-print (tarefa)
+print (tarefa)# impreme o dicionario criado com a funcao 
+
 
 
 

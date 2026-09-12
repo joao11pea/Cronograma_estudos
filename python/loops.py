@@ -5,26 +5,28 @@ import random
 #RANGE
 
 #TABUADA
-n_usuario = input("Digite um numero para ver sua taboada: ")
-n_escolhido = int(n_usuario)
+# n_usuario = input("Digite um numero para ver sua taboada: ")
+# n_escolhido = int(n_usuario)
 
 
-for de1_a_10 in range(1,11):
-    tabuada = n_escolhido * de1_a_10
-    print(f"{n_escolhido}x {de1_a_10}= {tabuada}") 
+# for de1_a_10 in range(1,11):
+#     tabuada = n_escolhido * de1_a_10
+#     print(f"{n_escolhido}x {de1_a_10}= {tabuada}") 
 
 
 
 #JOGO DA ADIVINHAÇÃO 
 
-numero_secreto = random.randint(1, 10)
+numero_secreto = random.randint(1, 250)
 chute_usuario = int(input("Tente acertar o numero que estou pensando:"))
 distancia = numero_secreto - chute_usuario
 while True:
-    if abs(distancia) >=6:
+    if abs(distancia) >=60:
         print("Esse chute passou longe")
-    elif abs(distancia) >=3: 
+    elif abs(distancia) >=30: 
         print("Voce esta chegando perto")
+    elif abs(distancia) >=10:
+        print("Voce esta perto")
     elif abs(distancia) >=1:
         print("Voce esta muito perto")
     else:
